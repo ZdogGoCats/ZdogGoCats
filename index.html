@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b12">
+    <meta name="description" content="Welcome to Zdog — gaming, creativity and community.">
+    <title>Zdog | Official Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header class="navbar">
+        <a href="#" class="brand">
+            <img src="assets/logo.png" alt="ZDog Logo">
+            <span>ZDOG</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#divisions">Divisions</a>
+            <a href="#about">About</a>
+            <a href="#socials">Socials</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">THE OFFICIAL ZDOG NETWORK</span>
+
+                <h1>WELCOME TO <span>ZDOG.</span></h1>
+
+                <p>
+                    Gaming. Creativity. Community.
+                    Built together.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#divisions" class="button primary">Explore ZDog</a>
+                    <a href="#about" class="button secondary">Learn More</a>
+                </div>
+            </div>
+
+            <div class="hero-logo">
+                <img src="assets/logo.png" alt="ZDog emblem">
+            </div>
+        </section>
+
+        <section class="divisions section" id="divisions">
+            <div class="section-heading">
+                <span class="eyebrow">WHAT WE DO</span>
+                <h2>OUR <span>DIVISIONS</span></h2>
+                <p>Three divisions. One organization.</p>
+            </div>
+
+            <div class="division-grid">
+
+                <article class="division-card netzdog">
+                    <div class="division-icon">⚙</div>
+                    <span class="card-label">SERVER OPERATIONS</span>
+                    <h3>NETZDOG</h3>
+                    <p>
+                        Managing Minecraft servers, server operations,
+                        maintenance and technical projects.
+                    </p>
+                    <span class="coming">OPERATIONS DIVISION</span>
+                </article>
+
+                <article class="division-card webzdog">
+                    <div class="division-icon">⌘</div>
+                    <span class="card-label">DIGITAL HEADQUARTERS</span>
+                    <h3>WEBZDOG</h3>
+                    <p>
+                        The official online home of ZDog.
+                        News, updates and everything happening across the network.
+                    </p>
+                    <span class="coming">YOU ARE HERE</span>
+                </article>
+
+                <article class="division-card cozdog">
+                    <div class="division-icon">✦</div>
+                    <span class="card-label">CREATIVE PRODUCTION</span>
+                    <h3>COZDOG</h3>
+                    <p>
+                        Video editing, graphics, thumbnails,
+                        branding and creative projects.
+                    </p>
+                    <span class="coming">CREATIVE DIVISION</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="section-heading">
+                <span class="eyebrow">OUR STORY</span>
+                <h2>MORE THAN <span>A NAME.</span></h2>
+            </div>
+
+            <p class="about-text">
+                Zdog is a creator-led organization bringing together
+                gaming, content creation and creative production.
+                What started with a passion for creating is growing
+                into something bigger.
+            </p>
+        </section>
+
+        <section class="socials section" id="socials">
+            <div class="section-heading">
+                <span class="eyebrow">STAY CONNECTED</span>
+                <h2>FOLLOW <span>ZDOG</span></h2>
+                <p>Keep up with our latest content and updates.</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.youtube.com/@Zdog_111"
+                   target="_blank" rel="noopener noreferrer">
+                    YouTube ↗
+                </a>
+                <a href="https://www.twitch.tv/zdoggocats"
+                   target="_blank" rel="noopener noreferrer">
+                    Twitch ↗
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand">ZDOG NETWORK</div>
+        <p>© <span id="year"></span> Zdog.No Plagarism.</p>
+        <p class="footer-small">Gaming · Creativity · Community</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
