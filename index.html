@@ -4,120 +4,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZDog — Gaming, content, and creative media.">
-    <title>webzdog</title>
+    <meta name="theme-color" content="#080b12">
+    <meta name="description" content="Webzdog — The digital headquarters of Zdog. Gaming, technology, creative media, and community.">
+    <title>Webzdog | The Digital Headquarters</title>
+
+    <link rel="icon" href="assets/logo.png">
     <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
+<header class="header">
     <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="assets/logo.png" alt="ZDog logo">
-            <span>ZDOG</span>
+        <a href="#home" class="logo">
+            <img src="assets/logo.png" alt="Zdog logo">
+            <span>WEBZDOG<span class="logo-dot">.</span></span>
         </a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            ☰
+        <button class="menu-toggle" id="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
 
         <div class="nav-links" id="nav-links">
             <a href="#home">Home</a>
             <a href="#divisions">Divisions</a>
+            <a href="#platforms">Platforms</a>
             <a href="#about">About</a>
             <a href="#socials">Socials</a>
         </div>
+
+        <a href="#platforms" class="nav-button">Explore Network ↗</a>
     </nav>
 </header>
 
 <main>
+
+    <!-- HERO -->
+
     <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="eyebrow">GAMING • CONTENT • MEDIA</p>
-            <h1>WELCOME TO <span>WEBZDOG</span></h1>
-            <p class="hero-description">
-                One organization. Multiple divisions. Built around gaming,
-                creativity, and community.
-            </p>
-            <a href="#divisions" class="primary-button">EXPLORE ZDOG</a>
-        </div>
+        <div class="hero-grid"></div>
         <div class="hero-glow"></div>
+
+        <div class="hero-content">
+            <div class="status-label">
+                <span class="status-dot"></span>
+                THE OFFICIAL ZDOG NETWORK
+            </div>
+
+            <p class="eyebrow">GAMING. TECHNOLOGY. CREATIVITY.</p>
+
+            <h1>
+                ONE NETWORK.<br>
+                <span>ENDLESS POSSIBILITIES.</span>
+            </h1>
+
+            <p class="hero-description">
+                Welcome to Webzdog. The digital headquarters connecting
+                gaming, technology, creative media, and community
+                under one organization.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#divisions" class="primary-button">
+                    EXPLORE THE NETWORK ↗
+                </a>
+                <a href="#about" class="secondary-button">
+                    LEARN ABOUT US
+                </a>
+            </div>
+
+            <div class="hero-bottom">
+                <span>INDEPENDENTLY BUILT.</span>
+                <span>COMMUNITY DRIVEN.</span>
+                <span>ALWAYS EVOLVING.</span>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span></span>
+            SCROLL TO EXPLORE
+        </div>
     </section>
 
-    <section class="section" id="divisions">
+
+    <!-- DIVISIONS -->
+
+    <section class="section divisions-section" id="divisions">
         <div class="section-heading">
             <p class="eyebrow">THE ORGANIZATION</p>
-            <h2>OUR DIVISIONS</h2>
-            <p>Different specialties. One Zdog identity.</p>
+            <h2>BUILT IN <span>DIVISIONS.</span></h2>
+            <p>
+                Different specialties. Shared vision. One identity.
+            </p>
         </div>
 
         <div class="division-grid">
+
             <article class="division-card">
-                <div class="card-number">01</div>
+                <div class="card-top">
+                    <span class="card-number">01 / DIVISION</span>
+                    <span class="card-symbol">N</span>
+                </div>
+
+                <div class="card-icon">⌘</div>
+
                 <h3>NETZDOG</h3>
                 <p class="division-type">SERVER OPERATIONS</p>
-                <p>
-                    Minecraft server management, configurations,
-                    maintenance, and community infrastructure.
+
+                <p class="card-description">
+                    Building and maintaining gaming infrastructure,
+                    Minecraft servers, communities, and connected systems.
                 </p>
+
+                <div class="card-footer">
+                    <span>GAMING INFRASTRUCTURE</span>
+                    <span>01</span>
+                </div>
             </article>
 
-            <article class="division-card">
-                <div class="card-number">02</div>
+            <article class="division-card featured-card">
+                <div class="card-top">
+                    <span class="card-number">02 / DIVISION</span>
+                    <span class="card-symbol">W</span>
+                </div>
+
+                <div class="card-icon">⌘</div>
+
                 <h3>WEBZDOG</h3>
                 <p class="division-type">DIGITAL HEADQUARTERS</p>
-                <p>
-                    The official online home of Zdog.
-                    News, updates, projects, and everything happening.
+
+                <p class="card-description">
+                    The central hub of the organization. Bringing
+                    projects, platforms, news, and the entire network together.
                 </p>
+
+                <div class="card-footer">
+                    <span>THE DIGITAL HQ</span>
+                    <span>02</span>
+                </div>
             </article>
 
             <article class="division-card">
-                <div class="card-number">03</div>
+                <div class="card-top">
+                    <span class="card-number">03 / DIVISION</span>
+                    <span class="card-symbol">C</span>
+                </div>
+
+                <div class="card-icon">⌘</div>
+
                 <h3>COZDOG</h3>
                 <p class="division-type">CREATIVE STUDIO</p>
-                <p>
-                    Video editing, thumbnails, graphics, branding,
-                    overlays, animation, and creative production.
+
+                <p class="card-description">
+                    Video production, editing, graphic design,
+                    branding, thumbnails, overlays, and creative media.
                 </p>
+
+                <div class="card-footer">
+                    <span>CREATIVE PRODUCTION</span>
+                    <span>03</span>
+                </div>
             </article>
+
         </div>
     </section>
+
+
+    <!-- PLATFORMS -->
+
+    <section class="platform-section" id="platforms">
+        <div class="section">
+            <div class="section-heading">
+                <p class="eyebrow">CONNECTED TECHNOLOGY</p>
+                <h2>MEET THE <span>PLATFORMS.</span></h2>
+                <p>
+                    A connected ecosystem designed to bring the network together.
+                </p>
+            </div>
+
+            <div class="platform-grid">
+
+                <article class="platform-card">
+                    <div class="platform-icon">01</div>
+                    <div class="platform-info">
+                        <span class="platform-tag">CONTROL CENTER</span>
+                        <h3>DogOS</h3>
+                        <p>
+                            The central dashboard for managing the
+                            Netzdog network, server operations, and administration.
+                        </p>
+                        <span class="coming-soon">IN DEVELOPMENT</span>
+                    </div>
+                </article>
+
+                <article class="platform-card">
+                    <div class="platform-icon">02</div>
+                    <div class="platform-info">
+                        <span class="platform-tag">PLAYER EXPERIENCE</span>
+                        <h3>DogPass</h3>
+                        <p>
+                            A unified player portal for accounts,
+                            profiles, statistics, and the community.
+                        </p>
+                        <span class="coming-soon">IN DEVELOPMENT</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
 
     <section class="about-section" id="about">
         <div class="about-content">
-            <p class="eyebrow">WHO WE ARE</p>
-            <h2>MORE THAN JUST GAMING.</h2>
+            <p class="eyebrow">OUR VISION</p>
+
+            <h2>
+                MORE THAN JUST<br>
+                <span>A GAMING BRAND.</span>
+            </h2>
+
             <p>
-                Zdog is a growing creator-led organization bringing
-                gaming, content creation, technology, and media together.
-                We are building something bigger, one project at a time.
+                Zdog is a creator-led organization built around
+                gaming, technology, creativity, and community.
+                Through specialized divisions and connected platforms,
+                we're working toward something bigger.
             </p>
+
+            <div class="about-line"></div>
+
+            <p class="about-signature">BUILT DIFFERENT. BUILT TOGETHER.</p>
         </div>
     </section>
+
+
+    <!-- SOCIALS -->
 
     <section class="section socials-section" id="socials">
         <div class="section-heading">
-            <p class="eyebrow">STAY CONNECTED</p>
-            <h2>FOLLOW ZDOG</h2>
+            <p class="eyebrow">JOIN THE COMMUNITY</p>
+            <h2>STAY <span>CONNECTED.</span></h2>
+            <p>Follow along and be part of what's coming next.</p>
         </div>
 
         <div class="social-links">
-            <a href="https://www.youtube.com/@zdog_111" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
-            <a href="https://www.twitch.tv/zdoggocats" target="_blank" rel="noopener noreferrer">Twitch ↗</a>
+            <a href="https://www.youtube.com/@zdog_111"
+               target="_blank" rel="noopener noreferrer">
+                <span>YOUTUBE</span>
+                <span>↗</span>
+            </a>
+
+            <a href="https://www.twitch.tv/zdoggocats"
+               target="_blank" rel="noopener noreferrer">
+                <span>TWITCH</span>
+                <span>↗</span>
+            </a>
         </div>
     </section>
+
 </main>
 
-<footer>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <a href="#home" class="footer-logo">WEBZDOG<span>.</span></a>
+
     <p>© <span id="year"></span> Zdog. All rights reserved.</p>
-    <p>Building an empire.</p>
+
+    <p>BUILDING AN EMPIRE.</p>
 </footer>
 
 <script src="script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
 
